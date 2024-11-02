@@ -1,193 +1,172 @@
-import * as React from "react"
-import type { HeadFC, PageProps } from "gatsby"
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import type { HeadFC } from 'gatsby';
+import { Bot, Code, Lightbulb, Rocket, Stars, Users } from 'lucide-react';
+import React from 'react';
 
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const doclistStyles = {
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: 300,
-  fontSize: 24,
-  maxWidth: 560,
-  marginBottom: 30,
-}
-
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-}
-
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  display: `inline-block`,
-  marginBottom: 24,
-  marginRight: 12,
-}
-
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom: 0,
-  lineHeight: 1.25,
-}
-
-const docLinks = [
-  {
-    text: "TypeScript Documentation",
-    url: "https://www.gatsbyjs.com/docs/how-to/custom-configuration/typescript/",
-    color: "#8954A8",
-  },
-  {
-    text: "GraphQL Typegen Documentation",
-    url: "https://www.gatsbyjs.com/docs/how-to/local-development/graphql-typegen/",
-    color: "#8954A8",
-  }
-]
-
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative" as "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
-}
-
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/getting-started/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
-  },
-  {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
-  },
-  {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#8EB814",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    badge: true,
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-    color: "#663399",
-  },
-]
-
-const IndexPage: React.FC<PageProps> = () => {
+const LandingPage = () => {
+  const isReadyToUse = false;
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>
-        Congratulations
-        <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! 🎉🎉🎉</span>
-      </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.tsx</code> to see this page
-        update in real-time. 😎
-      </p>
-      <ul style={doclistStyles}>
-        {docLinks.map(doc => (
-          <li key={doc.url} style={docLinkStyle}>
-            <a
-              style={linkStyle}
-              href={`${doc.url}?utm_source=starter&utm_medium=ts-docs&utm_campaign=minimal-starter-ts`}
-            >
-              {doc.text}
-            </a>
-          </li>
-        ))}
-      </ul>
-      <ul style={listStyles}>
-        {links.map(link => (
-          <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
-            <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter-ts`}
-              >
-                {link.text}
-              </a>
-              {link.badge && (
-                <span style={badgeStyle} aria-label="New Badge">
-                  NEW!
-                </span>
+    <div className="min-h-screen bg-gradient-to-br from-slate-300 to-slate-50">
+      {/* Hero Section */}
+      <header className="relative pb-20 pt-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight bg-gradient-to-r from-slate-300 to-slate-950 bg-clip-text text-transparent mb-10 drop-shadow-md">
+              autobuild
+            </h2>
+            <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-6xl">
+              Turn Ideas into
+              <span className="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
+                {' '}
+                Production-Ready
+              </span>
+              <br />
+              Applications in Minutes
+            </h1>
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-600">
+              Collaborate with AI systems guided by industry-leading experts to
+              build professional applications from simple descriptions.
+              Experience human expertise amplified by AI.
+            </p>
+            <div className="mt-10 flex justify-center">
+              {isReadyToUse ? (
+                <div className="flex gap-4">
+                  <Button
+                    className="bg-indigo-600 hover:bg-indigo-700"
+                    size="lg"
+                  >
+                    Start Building
+                  </Button>
+                  <Button variant="outline" size="lg">
+                    Watch Demo
+                  </Button>
+                </div>
+              ) : (
+                <div className="text-2xl font-semibold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent animate-pulse">
+                  Coming Soon
+                </div>
               )}
-              <p style={descriptionStyle}>{link.description}</p>
-            </span>
-          </li>
-        ))}
-      </ul>
-      <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
-      />
-    </main>
-  )
-}
+            </div>
+          </div>
+        </div>
+      </header>
 
-export default IndexPage
+      {/* Features Section */}
+      <section className="py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <FeatureCard
+              icon={<Bot className="h-8 w-8 text-indigo-600" />}
+              title="Expert-Guided AI"
+              description="Access AI systems carefully curated and guided by industry-leading experts to build your application with precision and care."
+            />
+            <FeatureCard
+              icon={<Rocket className="h-8 w-8 text-indigo-600" />}
+              title="Production-Ready"
+              description="Get polished, scalable applications that are ready for real-world deployment from day one."
+            />
+            <FeatureCard
+              icon={<Code className="h-8 w-8 text-indigo-600" />}
+              title="No Code Required"
+              description="Transform your ideas into reality without writing a single line of code. Just describe what you need."
+            />
+          </div>
+        </div>
+      </section>
 
-export const Head: HeadFC = () => <title>Home Page</title>
+      {/* How It Works Section */}
+      <section className="bg-white py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-center text-3xl font-bold text-slate-900">
+            How It Works
+          </h2>
+          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+            <ProcessStep
+              number="1"
+              icon={<Lightbulb className="h-6 w-6" />}
+              title="Describe Your Idea"
+              description="Share your vision in plain English. No technical jargon needed."
+            />
+            <ProcessStep
+              number="2"
+              icon={<Users className="h-6 w-6" />}
+              title="Guided AI Collaboration"
+              description="Watch and guide our expert AI systems as they work together to design and build your application."
+            />
+            <ProcessStep
+              number="3"
+              icon={<Stars className="h-6 w-6" />}
+              title="Get Your Application"
+              description="Receive a production-ready application that's polished and ready to use."
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="bg-indigo-600 py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold text-white">
+              Ready to Build Something Amazing?
+            </h2>
+            <p className="mt-4 text-lg text-indigo-100">
+              Join thousands of builders who are creating the next generation of
+              applications.
+            </p>
+            <Button className="mt-8 font-semibold" size="lg">
+              Get Started Now
+            </Button>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+// Feature Card Component
+const FeatureCard = ({
+  icon,
+  title,
+  description,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}) => (
+  <Card className="overflow-hidden">
+    <CardContent className="flex flex-col p-6 sm:p-8">
+      <div className="flex flex-col items-center text-center">
+        <div className="mt-4">{icon}</div>
+        <h3 className="mt-4 text-xl font-semibold text-slate-900">{title}</h3>
+        <p className="mt-2 text-slate-600 px-2 sm:px-4">{description}</p>
+      </div>
+    </CardContent>
+  </Card>
+);
+
+// Process Step Component
+const ProcessStep = ({
+  number,
+  icon,
+  title,
+  description,
+}: {
+  number: string;
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}) => (
+  <div className="flex flex-col items-center text-center">
+    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-indigo-100 text-indigo-600">
+      {icon}
+    </div>
+    <h3 className="mt-4 text-lg font-semibold text-slate-900">{title}</h3>
+    <p className="mt-2 text-slate-600">{description}</p>
+  </div>
+);
+
+export default LandingPage;
+
+export const Head: HeadFC = () => <title>Autobuild</title>;
