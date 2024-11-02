@@ -115,9 +115,6 @@ const LandingPage = () => {
               Join thousands of builders who are creating the next generation of
               applications.
             </p>
-            <Button className="mt-8 font-semibold" size="lg">
-              Get Started Now
-            </Button>
           </div>
         </div>
       </section>
