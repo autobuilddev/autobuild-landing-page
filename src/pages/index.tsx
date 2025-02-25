@@ -1,26 +1,26 @@
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Card, CardContent } from '@/components/ui/card';
-import {
-  PanelRight,
-  Sparkles,
-  Code,
-  PaintBucket,
-  Rocket,
-  ChevronRight,
-  Check,
-  MessageSquare,
-  BrainCircuit,
-  Laptop,
-  Pencil,
-  ArrowRight,
-  ExternalLinkIcon,
-} from 'lucide-react';
-import MovieMatchPreview from '@/components/MovieMatchPreview';
 import MealPlannerPreview from '@/components/MealPlannerPreview';
+import MovieMatchPreview from '@/components/MovieMatchPreview';
+import SEO from '@/components/SEO';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
 import WorkoutBuddyPreview from '@/components/WorkoutBuddyPreview';
+import { motion } from 'framer-motion';
+import {
+  ArrowRight,
+  BrainCircuit,
+  Check,
+  ChevronRight,
+  Code,
+  ExternalLinkIcon,
+  MessageSquare,
+  PaintBucket,
+  PanelRight,
+  Pencil,
+  Rocket,
+  Sparkles,
+} from 'lucide-react';
+import React, { useEffect, useState } from 'react';
 
 const comingSoon = true;
 
@@ -650,3 +650,10 @@ const LandingPage = () => {
 };
 
 export default LandingPage;
+
+export const Head = () => (
+  <SEO
+    title="Build Professional Apps with AI"
+    description="Turn your ideas into production-ready applications with AI guided by expert industry knowledge. Autobuild helps you create beautiful, functional apps in minutes, not months."
+  />
+);
