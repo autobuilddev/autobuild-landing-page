@@ -102,7 +102,7 @@ const MovieMatchPreview = () => {
 
       {/* Recommendation section */}
       <div className="bg-[#0f3460] rounded-lg p-3 mt-auto">
-        <h4 className="text-[#e94560] font-medium text-sm mb-2">
+        <h4 className="text-secondary font-bold text-sm mb-2">
           Weekend Recommendation
         </h4>
         <div className="flex items-center">

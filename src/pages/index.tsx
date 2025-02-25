@@ -16,10 +16,13 @@ import {
   Laptop,
   Pencil,
   ArrowRight,
+  ExternalLinkIcon,
 } from 'lucide-react';
 import MovieMatchPreview from '@/components/MovieMatchPreview';
 import MealPlannerPreview from '@/components/MealPlannerPreview';
 import WorkoutBuddyPreview from '@/components/WorkoutBuddyPreview';
+
+const comingSoon = true;
 
 const LandingPage = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -128,6 +131,7 @@ const LandingPage = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
+            className="flex flex-col items-center"
           >
             <div className="inline-block mb-4 px-4 py-2 bg-indigo-100 dark:bg-indigo-900/30 rounded-full">
               <p className="text-sm font-medium text-indigo-700 dark:text-indigo-300 flex items-center">
@@ -139,20 +143,29 @@ const LandingPage = () => {
               Your App Idea, <br className="md:hidden" />
               <span className="italic">Professionally</span> Built
             </h1>
-            <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mb-8">
+            <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mb-4">
               Describe your idea, and we'll build a production-ready app that
               looks like it was crafted by a professional design and development
               team.
             </p>
-            <div className="flex flex-col md:flex-row justify-center gap-4 mb-12">
+            <div className="flex flex-col md:flex-row justify-center gap-4 mb-4 mt-4">
               <Button size="lg" className="bg-indigo-600 hover:bg-indigo-700">
-                Start Building Free
+                Start Building
                 <ChevronRight className="h-4 w-4 ml-2" />
               </Button>
               <Button variant="outline" size="lg">
                 See Demo
               </Button>
             </div>
+            {comingSoon && (
+              <div className="relative mb-4 overflow-hidden">
+                <div className="flex items-center justify-center h-10">
+                  <div className="animate-pulse bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text font-bold text-lg">
+                    Coming Soon
+                  </div>
+                </div>
+              </div>
+            )}
           </motion.div>
 
           {/* App Builder Demo */}
@@ -180,7 +193,8 @@ const LandingPage = () => {
                 <div className="flex">
                   <Input
                     value={promptText}
-                    onChange={(e) => setPromptText(e.target.value)}
+                    // onChange={(e) => setPromptText(e.target.value)}
+                    readOnly
                     className="w-full px-4 py-3 text-base rounded-r-none"
                     placeholder="Describe the app you want to build..."
                   />
@@ -201,9 +215,8 @@ const LandingPage = () => {
                     </p>
                     <div className="text-left">
                       <Button variant="outline" size="sm" className="mr-2">
-                        Preview
+                        Preview <ExternalLinkIcon className="w-4 h-4" />
                       </Button>
-                      <Button size="sm">Deploy App</Button>
                     </div>
                   </div>
                   <div className="md:w-1/2">
@@ -507,17 +520,13 @@ const LandingPage = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="default">
-              Start Building Free
+              Start Building
             </Button>
             <Button size="lg" variant="secondary">
               Schedule a Demo
             </Button>
           </div>
           <div className="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
-            <div className="flex items-center">
-              <Check className="h-5 w-5 mr-2 text-indigo-300" />
-              <span className="text-indigo-100">No credit card required</span>
-            </div>
             <div className="flex items-center">
               <Check className="h-5 w-5 mr-2 text-indigo-300" />
               <span className="text-indigo-100">14-day free trial</span>
