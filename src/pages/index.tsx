@@ -77,7 +77,7 @@ const LandingPage = () => {
   }, [currentIndex, examples]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-slate-950 dark:via-indigo-950 dark:to-purple-950">
+    <div className="min-h-screen bg-gradient-to-br from-blue-200 via-indigo-100 to-purple-200 dark:from-slate-950 dark:via-indigo-900 dark:to-purple-900">
       {/* Navigation */}
       <nav
         className={`fixed top-0 w-full z-50 transition-all duration-200 ${
@@ -135,7 +135,7 @@ const LandingPage = () => {
                 AI guided by real human industry expert knowledge
               </p>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 bg-gradient-to-r from-indigo-600 to-purple-600 text-transparent bg-clip-text">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 bg-gradient-to-r from-indigo-600 to-purple-600 text-transparent bg-clip-text !leading-snug">
               Your App Idea, <br className="md:hidden" />
               <span className="italic">Professionally</span> Built
             </h1>
@@ -618,7 +618,7 @@ const LandingPage = () => {
             </div>
           </div>
           <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p>© 2025 Autobuild. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Autobuild. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="hover:text-white transition-colors">
                 Twitter
