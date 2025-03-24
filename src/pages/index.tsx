@@ -140,13 +140,13 @@ const LandingPage = () => {
               </p>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 bg-gradient-to-r from-indigo-600 to-purple-600 text-transparent bg-clip-text !leading-snug">
-              Your App Idea, <br className="md:hidden" />
+              Your Product Idea, <br className="md:hidden" />
               <span className="italic">Professionally</span> Built
             </h1>
             <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mb-4">
               Describe your idea, and we'll build a production-ready app that
-              looks like it was crafted by a professional design and development
-              team.
+              looks and works like it was crafted by a professional design and
+              development team.
             </p>
             <div className="flex flex-col md:flex-row justify-center gap-4 mb-4 mt-4">
               <Button size="lg" className="bg-indigo-600 hover:bg-indigo-700">
@@ -243,7 +243,7 @@ const LandingPage = () => {
         <div className="container mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl font-bold mb-4">
-              Professional Apps From Day One
+              Professional Products From Day One
             </h2>
             <p className="text-lg text-slate-600 dark:text-slate-300">
               Skip the MVP phase. Get a polished, production-ready application
