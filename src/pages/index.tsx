@@ -20,7 +20,7 @@ import {
   Rocket,
   Sparkles,
 } from 'lucide-react';
-import * as React from "react";
+import * as React from 'react';
 const { useEffect, useState } = React;
 
 const comingSoon = true;
@@ -128,12 +128,7 @@ const LandingPage = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4">
         <div className="container mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="flex flex-col items-center"
-          >
+          <div className="flex flex-col items-center animate-in fade-in slide-in-from-bottom-5 duration-700">
             <div className="inline-block mb-4 px-4 py-2 bg-indigo-100 dark:bg-indigo-900/30 rounded-full">
               <p className="text-sm font-medium text-indigo-700 dark:text-indigo-300 flex items-center">
                 <Sparkles className="h-4 w-4 mr-2" />
@@ -167,15 +162,10 @@ const LandingPage = () => {
                 </div>
               </div>
             )}
-          </motion.div>
+          </div>
 
           {/* App Builder Demo */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="max-w-4xl mx-auto bg-white dark:bg-slate-800 rounded-xl shadow-xl overflow-hidden border border-slate-200 dark:border-slate-700"
-          >
+          <motion.div className="max-w-4xl mx-auto bg-white dark:bg-slate-800 rounded-xl shadow-xl overflow-hidden border border-slate-200 dark:border-slate-700 animate-in fade-in slide-in-from-bottom-5 duration-700">
             <div className="p-4 bg-slate-50 dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 flex items-center">
               <div className="flex space-x-2">
                 <div className="w-3 h-3 rounded-full bg-red-500"></div>
@@ -609,18 +599,27 @@ const LandingPage = () => {
                 <h4 className="font-semibold text-white mb-4">Legal</h4>
                 <ul className="space-y-2">
                   <li>
-                    <a href="#" className="hover:text-white transition-colors">
-                      Privacy
+                    <a
+                      href="/privacy-policy"
+                      className="hover:text-white transition-colors"
+                    >
+                      Privacy Policy
                     </a>
                   </li>
                   <li>
-                    <a href="/terms-of-service" className="hover:text-white transition-colors">
+                    <a
+                      href="/terms-of-service"
+                      className="hover:text-white transition-colors"
+                    >
                       Terms
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-white transition-colors">
-                      Security
+                    <a
+                      href="/acceptable-use-policy"
+                      className="hover:text-white transition-colors"
+                    >
+                      Acceptable Use
                     </a>
                   </li>
                 </ul>

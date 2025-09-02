@@ -171,7 +171,14 @@ const TermsOfService = () => {
                     purchase of additional credits or an upgrade to a higher
                     plan. Credits expire at the end of each billing period and
                     do not roll over, unless otherwise specified in the Order
-                    Form.
+                    Form. Use of the Service is also subject to Provider's{' '}
+                    <a
+                      href="/acceptable-use-policy"
+                      className="text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 underline"
+                    >
+                      Acceptable Use Policy
+                    </a>
+                    .
                   </div>
                 </div>
               </div>
