@@ -282,6 +282,109 @@ const TermsOfService = () => {
                 </div>
               </div>
             </div>
+
+            <h2 className="text-2xl font-bold mt-8 mb-6 text-indigo-700 dark:text-indigo-300">
+              Payments, Refunds & Credits
+            </h2>
+
+            <div className="bg-slate-50 dark:bg-slate-800 rounded-lg p-6 mb-6">
+              <h3 className="text-lg font-semibold mb-4 italic">
+                Refunds & Credits
+              </h3>
+
+              <div className="space-y-4">
+                <div>
+                  <strong className="text-indigo-600 dark:text-indigo-400">
+                    Subscriptions; Renewal; Cancellation.
+                  </strong>{' '}
+                  Subscriptions renew automatically for successive billing
+                  periods unless canceled before the end of the then-current
+                  period. You may cancel at any time; cancellation takes effect
+                  at the end of the current period. Fees already paid are
+                  non-refundable and we do not provide credits or refunds for
+                  partial periods.
+                </div>
+
+                <div>
+                  <strong className="text-indigo-600 dark:text-indigo-400">
+                    Credits.
+                  </strong>{' '}
+                  “Credits” are prepaid units that can be used to access certain
+                  features. Credits are not currency, have no cash value, are
+                  non-transferable, and are non-refundable. Credits used to
+                  access Services are consumed and cannot be returned.
+                </div>
+
+                <div>
+                  <strong className="text-indigo-600 dark:text-indigo-400">
+                    Refunds.
+                  </strong>{' '}
+                  All fees and purchases (including credits and subscription
+                  fees) are final and non-refundable, except where a refund is
+                  required by applicable law (for example, where mandatory
+                  consumer rights apply). If a refund is issued, we may deduct
+                  the value of any credits or Services already consumed.
+                </div>
+
+                <div>
+                  <strong className="text-indigo-600 dark:text-indigo-400">
+                    Trials & Promotions.
+                  </strong>{' '}
+                  If you convert from a free trial or promotional offer, you
+                  will be charged at the then-current rate at the end of the
+                  promotional period unless you cancel beforehand. Promotional
+                  terms may impose additional restrictions; all promotional fees
+                  are non-refundable unless required by law.
+                </div>
+
+                <div>
+                  <strong className="text-indigo-600 dark:text-indigo-400">
+                    Chargebacks.
+                  </strong>{' '}
+                  You agree to contact us to resolve any billing issue before
+                  initiating a chargeback. We may suspend or terminate access
+                  for fraudulent or improper chargebacks.
+                </div>
+              </div>
+            </div>
+
+            <h2 className="text-2xl font-bold mt-8 mb-6 text-indigo-700 dark:text-indigo-300">
+              Data Use for Improvement
+            </h2>
+
+            <div className="bg-slate-50 dark:bg-slate-800 rounded-lg p-6 mb-6">
+              <h3 className="text-lg font-semibold mb-4 italic">
+                Data Use & Customer Content
+              </h3>
+
+              <div className="space-y-4">
+                <div>
+                  <strong className="text-indigo-600 dark:text-indigo-400">
+                    Service Data & Improvement.
+                  </strong>{' '}
+                  We collect and process Service Data (for example, usage
+                  metrics, logs, technical events, prompts, outputs, and error
+                  reports) to operate, maintain, secure, and improve the
+                  Services. We may perform limited human review of specific
+                  error cases or flagged events to diagnose issues and improve
+                  system quality. Where feasible, we use aggregation and
+                  de-identification. For Enterprise plans, we offer
+                  configuration options to limit human review and/or opt out of
+                  model-training uses of Customer Content, subject to feature
+                  impacts. We do not sell personal data.
+                </div>
+
+                <div>
+                  <strong className="text-indigo-600 dark:text-indigo-400">
+                    Customer Content.
+                  </strong>{' '}
+                  You grant us a limited license to process your content solely
+                  to provide the Services, including running models, maintaining
+                  backups, preventing abuse, and improving functionality as
+                  described above. We do not claim ownership of your content.
+                </div>
+              </div>
+            </div>
           </CardContent>
         </Card>
       </main>
