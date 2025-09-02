@@ -129,28 +129,52 @@ const LandingPage = () => {
       <section className="pt-32 pb-20 px-4">
         <div className="container mx-auto text-center">
           <div className="flex flex-col items-center animate-in fade-in slide-in-from-bottom-5 duration-700">
-            <div className="inline-block mb-4 px-4 py-2 bg-indigo-100 dark:bg-indigo-900/30 rounded-full">
-              <p className="text-sm font-medium text-indigo-700 dark:text-indigo-300 flex items-center">
-                <Sparkles className="h-4 w-4 mr-2" />
-                AI guided by real human industry expert knowledge
-              </p>
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 bg-gradient-to-r from-indigo-600 to-purple-600 text-transparent bg-clip-text !leading-snug">
-              Your Product Idea, <br className="md:hidden" />
-              <span className="italic">Professionally</span> Built
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-8 bg-gradient-to-r from-indigo-600 to-purple-600 text-transparent bg-clip-text !leading-snug">
+              Expert-Guided AI that Ships Real Apps. Fast.
             </h1>
-            <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mb-4">
-              Describe your idea, and we'll build a production-ready app that
-              looks and works like it was crafted by a professional design and
-              development team.
-            </p>
+            <div className="max-w-5xl mx-auto mb-8">
+              <div className="grid md:grid-cols-1 gap-8 items-start">
+                <div>
+                  <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300">
+                    Describe your product. Autobuild's AI, following real UX,
+                    UI, and engineering playbooks, designs and delivers a
+                    production-ready web app in minutes, not days. It looks
+                    professional, actually works correctly, and is built to
+                    scale.
+                  </p>
+                  <p className="text-base text-slate-500 dark:text-slate-400 italic mt-4">
+                    From idea to live app in minutes
+                  </p>
+                </div>
+                {/* <div className="space-y-3">
+                  <div className="flex items-center">
+                    <Check className="h-5 w-5 mr-3 text-green-500 flex-shrink-0" />
+                    <span className="text-slate-600 dark:text-slate-300">
+                      Professional results, without hiring a team
+                    </span>
+                  </div>
+                  <div className="flex items-center">
+                    <Check className="h-5 w-5 mr-3 text-green-500 flex-shrink-0" />
+                    <span className="text-slate-600 dark:text-slate-300">
+                      Senior-level UX/UI baked in from the start
+                    </span>
+                  </div>
+                  <div className="flex items-center">
+                    <Check className="h-5 w-5 mr-3 text-green-500 flex-shrink-0" />
+                    <span className="text-slate-600 dark:text-slate-300">
+                      Clean, maintainable code that actually ships
+                    </span>
+                  </div>
+                </div> */}
+              </div>
+            </div>
             <div className="flex flex-col md:flex-row justify-center gap-4 mb-4 mt-4">
               <Button size="lg" className="bg-indigo-600 hover:bg-indigo-700">
-                Start Building
+                Start building
                 <ChevronRight className="h-4 w-4 ml-2" />
               </Button>
               <Button variant="outline" size="lg">
-                See Demo
+                See a live example
               </Button>
             </div>
             {comingSoon && (
