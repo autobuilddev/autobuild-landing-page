@@ -1,6 +1,7 @@
+import { Actions } from 'gatsby';
 import * as path from 'path';
 
-export const onCreateWebpackConfig = ({ actions }) => {
+export const onCreateWebpackConfig = ({ actions }: { actions: Actions }) => {
   actions.setWebpackConfig({
     resolve: {
       alias: {
