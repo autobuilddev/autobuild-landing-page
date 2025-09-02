@@ -91,10 +91,10 @@ const LandingPage = () => {
         }`}
       >
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-          <div className="flex items-center gap-2">
+          <a href="/" className="flex items-center gap-2">
             <Sparkles className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
             <span className="font-bold text-xl">Autobuild</span>
-          </div>
+          </a>
           <div className="hidden md:flex items-center space-x-6">
             <a
               href="#features"
