@@ -20,7 +20,8 @@ import {
   Rocket,
   Sparkles,
 } from 'lucide-react';
-import React, { useEffect, useState } from 'react';
+import * as React from "react";
+const { useEffect, useState } = React;
 
 const comingSoon = true;
 
@@ -613,7 +614,7 @@ const LandingPage = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-white transition-colors">
+                    <a href="/terms-of-service" className="hover:text-white transition-colors">
                       Terms
                     </a>
                   </li>
