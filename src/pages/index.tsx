@@ -21,6 +21,7 @@ import {
   Sparkles,
 } from 'lucide-react';
 import * as React from 'react';
+import { Link } from 'gatsby';
 const { useEffect, useState } = React;
 
 const comingSoon = true;
@@ -91,10 +92,10 @@ const LandingPage = () => {
         }`}
       >
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-          <a href="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <Sparkles className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
             <span className="font-bold text-xl">Autobuild</span>
-          </a>
+          </Link>
           <div className="hidden md:flex items-center space-x-6">
             <a
               href="#features"
@@ -623,28 +624,28 @@ const LandingPage = () => {
                 <h4 className="font-semibold text-white mb-4">Legal</h4>
                 <ul className="space-y-2">
                   <li>
-                    <a
-                      href="/privacy-policy"
+                    <Link
+                      to="/privacy-policy/"
                       className="hover:text-white transition-colors"
                     >
                       Privacy Policy
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="/terms-of-service"
+                    <Link
+                      to="/terms-of-service/"
                       className="hover:text-white transition-colors"
                     >
                       Terms
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="/acceptable-use-policy"
+                    <Link
+                      to="/acceptable-use-policy/"
                       className="hover:text-white transition-colors"
                     >
                       Acceptable Use
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -10,15 +11,15 @@ const AcceptableUsePolicy = () => {
       {/* Navigation */}
       <nav className="bg-white/90 dark:bg-slate-900/90 backdrop-blur-md shadow-sm border-b border-slate-200 dark:border-slate-800">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-          <a href="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <Sparkles className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
             <span className="font-bold text-xl">Autobuild</span>
-          </a>
+          </Link>
           <Button variant="ghost" size="sm" asChild>
-            <a href="/" className="flex items-center gap-2">
+            <Link to="/" className="flex items-center gap-2">
               <ArrowLeft className="h-4 w-4" />
               Back to Home
-            </a>
+            </Link>
           </Button>
         </div>
       </nav>
@@ -821,12 +822,12 @@ const AcceptableUsePolicy = () => {
           </p>
           <div className="mt-2">
             <Button variant="ghost" size="sm" asChild>
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300"
               >
                 Return to Autobuild
-              </a>
+              </Link>
             </Button>
           </div>
         </div>
